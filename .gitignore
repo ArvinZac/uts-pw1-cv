@@ -1,0 +1,6 @@
+# Pengaturan lokal VS Code
+.vscode/
+
+# File sistem operasi (MacOS/Windows)
+.DS_Store
+Thumbs.db

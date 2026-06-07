@@ -1,0 +1,233 @@
+<!-- 
+================================================================================
+UTS Pemrograman Web 1 (Curicullum Vitae)
+Virgio Amany Zain (NIM: 250401010425)
+
+Ketentuan halaman web CV:
+[a] Memiliki image/foto diri
+[b] Minimal 2 paragraf deskripsi diri
+[c] Memiliki tag Heading dan elemen Komentar
+[d] Memiliki tag untuk Text Formatting
+[e] Memiliki minimal 3 link
+[f] Memiliki minimal 3 image/gambar
+[g] Memiliki minimal 2 tabel
+[h] Memiliki minimal 2 list
+================================================================================
+-->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================== -->
+    <!-- NAVIGASI ATAS                    -->
+    <!-- ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#riwayat">Riwayat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <!-- Tag Heading (H1) -->
+        <h1 class="display-4 fw-bold text-center mb-5">Curriculum Vitae</h1>
+        <!-- FOTO DIRI & LINK EKSTERNAL SOSIAL MEDIA -->
+        <section id="biodata" class="mb-5">
+            <div class="card p-4 shadow-sm mx-auto border-0 text-center bg-white" style="max-width: 380px;">
+                <img src="images/profil.jpg" alt="Foto Profil Mahasiswa"
+                    class="img-fluid rounded-circle mx-auto profile-photo mb-3"
+                    style="width: 180px; height: 180px; object-fit: cover;">
+                <h4 class="fw-bold">Virgio Amany Zain</h4>
+                <p class="text-primary mb-1">Junior Network Engineer | Informatics Student</p>
+
+                <!-- LINK EKSTERNAL -->
+                <div class="d-flex justify-content-center gap-3 mt-4">
+                    <a href="https://instagram.com/oigriv" target="_blank"
+                        class="btn btn-outline-danger rounded-circle social-icon" title="Instagram">
+                        <i class="bi bi-instagram fs-5"></i>
+                    </a>
+                    <a href="https://github.com/arvinzac" target="_blank"
+                        class="btn btn-outline-dark rounded-circle social-icon" title="GitHub">
+                        <i class="bi bi-github fs-5"></i>
+                    </a>
+                    <a href="https://wa.me/628113126999" target="_blank"
+                        class="btn btn-outline-success rounded-circle social-icon" title="WhatsApp">
+                        <i class="bi bi-whatsapp fs-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFILING -->
+        <section id="profil" class="profil-section mb-5">
+            <div class="card p-4 shadow-sm border-0 bg-white">
+                <h3 class="fw-bold text-dark border-bottom pb-2">Profil</h3>
+                <p class="mt-3 text-secondary" style="text-align: justify;">
+                    Halo, perkenalkan saya <strong>Virgio Amany Zain</strong>, 
+                    seorang <strong>Pranata Jaringan</strong> <em>yang berdedikasi penuh</em> 
+                    dalam mengelola infrastruktur IT di tempat saya bekerja. Saat ini, saya juga berstatus 
+                    sebagai mahasiswa aktif semester 2 pada program studi <strong>Teknik Informatika</strong> 
+                    di Universitas Siber Asia.
+                </p>
+                <p class="text-secondary mb-0" style="text-align: justify;">
+                    Ketertarikan saya berawal dari rasa kagum melihat cara perangkat jaringan
+                    dapat <mark>saling berkomunikasi</mark>. Hal tersebut mendorong saya belajar <u>infrastruktur</u> IT.
+                    
+                </p>
+            </div>
+        </section>
+
+ <!-- Link Internal Skill-->
+        <section id="skill" class="skill-section mb-5">
+            <!-- Pembatas Garis -->
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+                        <h5 class="fw-bold text-dark mb-3">Hobi</h5>
+                        <ul>
+                            <li>Bermain musik</li>
+                            <li>Bermain simulation game</li>
+                            <li>Menonton podcast</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+                        <h5 class="fw-bold text-dark mb-3">Skill Utama</h5>
+                        <ol>
+                            <li><em>Routing & Switching</em></li>
+                            <li>Konfigurasi MikroTik</li>
+                            <li><em>Troubleshooting</em> Jaringan</li>
+                            <li>Manajemen Infrastruktur Jaringan</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Link Internal Riwayat-->
+        <section id="riwayat" class="riwayat-section mb-5">
+            <!-- Pembatas Garis -->
+            <div class="divider"></div>
+            
+            <div class="card p-3 shadow-sm border-0 mb-4 bg-white">
+                <h5 class="fw-bold text-primary mb-3">Riwayat Pendidikan</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped mb-0">
+                        <thead class="table-primary text-dark">
+                            <tr>
+                                <th>Jenjang</th>
+                                <th>Nama Sekolah / Kampus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SMA</td>
+                                <td>SMA Al - Irsyad Cilacap</td>
+                            </tr>
+                            <tr>
+                                <td>Kuliah</td>
+                                <td>Universitas Siber Asia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Pembatas Garis -->
+            <div class="divider"></div>
+
+            <div class="card p-3 shadow-sm border-0 bg-white">
+                <h5 class="fw-bold text-primary mb-3">Pengalaman Kerja</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped align-middle mb-0">
+                        <thead class="table-success text-dark">
+                            <tr>
+                                <th>Perusahaan & Posisi</th>
+                                <th>Tahun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/adhi_karya.png" alt="Logo Adhi Karya"
+                                            class="rounded-circle border me-3"
+                                            style="width: 40px; height: 40px; object-fit: cover;">
+                                        <div>
+                                            <strong class="text-dark">PT Adhi Karya (Persero) Tbk</strong><br>
+                                            <small class="text-primary fw-bold">IT Support & Network Assistant</small>
+                                            <p class="mt-1 mb-0 text-secondary" style="font-size: 0.85rem; text-align: justify; line-height: 1.4;">
+                                                Merancang dan mengonfigurasi perangkat jaringan (<em>MikroTik</em>), melakukan pemantauan lalu lintas antar jaringan pada infrastruktur, serta menangani <em>troubleshooting</em> jaringan yang cukup sering terjadi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-nowrap text-center">2020 - 2022</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/innovative_jaya.png" alt="Logo Innovative Jaya Bersama"
+                                            class="rounded-circle border me-3"
+                                            style="width: 40px; height: 40px; object-fit: cover;">
+                                        <div>
+                                            <strong class="text-dark">PT Innovative Jaya Bersama</strong><br>
+                                            <small class="text-primary fw-bold">Junior Network Engineer</small>
+                                            <p class="mt-1 mb-0 text-secondary" style="font-size: 0.85rem; text-align: justify; line-height: 1.4;">
+                                                Bertanggung jawab atas instalasi dan pemeliharaan perangkat keras serta jaringan lokal (LAN/WLAN). Memberikan dukungan teknis (<em>IT Helpdesk</em>) harian guna memastikan kelancaran operasional perusahaan.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-nowrap text-center">2024 - Saat ini</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- ========================================== -->
+    <!-- FOOTER                           -->
+    <!-- ========================================== -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">Website CV Virgio Amany Zain &copy; 2026. UTS Pemrograman Web 1.</p>
+            <p class="text-muted mb-0"><small>Dibuat menggunakan Bootstrap 5 dan CSS.</small></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS CDN (including Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
